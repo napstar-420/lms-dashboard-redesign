@@ -1,0 +1,145 @@
+:root {
+    --transition: cubic-bezier(0.19, 1, 0.22, 1) all 0.3s;
+    --black: #303030;
+    --white: #fff;
+    --semi-bold: 600;
+    --bold: 800;
+    --regular: 400;
+    --box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    --font-small: 0.8rem;
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+} 
+
+.nav-wrapper {
+    background-color: var(--white);
+    width: max-content;
+    padding: 1rem;
+    display: grid;
+    min-height: calc(100vh - 1rem);
+    grid-template-rows: auto 1fr auto auto;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+}
+
+.logo-wrapper {
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 4px solid #F0F0F0;
+}
+
+.lms-logo {
+    width: 150px;
+}
+
+.lms-logo + p {
+    color: #303030;
+    font-family: var(--poppins);
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-item {
+    width: 100%;
+    margin:0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: var(--poppins);
+    color: var(--black);
+    transition: var(--transition);
+}
+
+.nav-item i {
+    position: relative;
+    bottom: 3px;
+    margin-right: 5px;
+}
+
+.nav-item:hover {
+    background-color: #F0F0F0;
+}
+
+.nav-item.active {
+    background-color: #F0F0F0;
+}
+
+.more-btn {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sub_nav {
+    list-style-type: none;
+    position: absolute;
+    left: 10rem;
+    width: max-content;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    display: none;
+}
+
+.sub_nav:hover {
+    display: inline-block;
+}
+
+.more-btn:hover + .sub_nav {
+   display: inline-block;
+}
+
+.sub_nav > .nav-item > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-wrapper > p {
+    color: var(--black);
+    font-family: var(--open-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-overflow: clip;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.settings-btn {
+    width: 100%;
+    border: none;
+    background-color: #F0F0F0;
+    padding: 0.5rem 0;
+    color: var(--black);
+    font-family: var(--poppins);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.settings-btn:hover {
+    background-color: #e2e2e2;
+}
+
+.settings-btn > i {
+    margin-right: 5px;
+    transition: var(--transition);
+}
+
+.settings-btn:hover > i {
+    transform: rotate(90deg);
+}
+
+.settings-btn:active {
+    background-color: #dbdbdb;
+}
+
