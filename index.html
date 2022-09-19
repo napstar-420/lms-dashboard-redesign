@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="./css/sidebar-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dab258eb4d.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <title>Learning Management System</title>
 </head>
 <body>
     <main class="wrapper">
+
+        <!-- HERE STARTS THE SIDE NAV HTML -->
+
         <div class="nav-wrapper">
             <div class="logo-wrapper">
                 <img src="./logo-New.png" alt="lms logo" class="lms-logo">
@@ -85,7 +89,100 @@
             <p>Virtual University <br> of <span style="font-size: inherit; color: rgb(0, 255, 64);">Pakistan</span></p>
             <button class="settings-btn"><i class="fa-solid fa-gear"></i>Settings</button>
         </div>
-        <div class="main-wrapper"></div>
+
+        <!-- HERE STARTS MAIN WRAPPER MEANS MAIN CONTENT -->
+
+        <div class="main-wrapper">
+            <h2>Welcome to LMS, Lara.</h2>
+            <p>Ready to catch up on your studies</p>
+            <button class="theme-changer"><i class="fa-solid fa-circle-half-stroke"></i>&nbsp;Light</button>
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search..." class="search-control"/>
+                <button class="search-btn">Search</button>
+            </div>
+            <h1>Courses <span style="color: blue;">(Spring 2022)</span></h1>
+            <div class="course-wrapper">
+                <div class="course" id="eng001">
+                    <div class="course-title">
+                        <h3>ENG001</h3>
+                        <p>Elementary English</p>
+                    </div>
+                    <div class="course-info">
+                        <div class="prof-pic"></div>
+                        <h4>Professor Kate</h4>
+                        <p>MA - Tefl</p>
+                        <p>University of Reading, UK</p>
+                    </div>
+                    <div class="course-options">
+                        <a href="#">Open course</a>
+                        <img src="./stickies.svg" alt="">
+                        <img src="./people.svg" alt="">
+                        <img src="./hourglass.svg" alt="">
+                        <img src="./bell.svg" alt="">
+                    </div>
+                </div>
+                <div class="course" id="mth001">
+                    <div class="course-title">
+                        <h3>MTH001</h3>
+                        <p>Elementary Mathematics</p>
+                    </div>
+                    <div class="course-info">
+                        <div class="prof-pic"></div>
+                        <h4>Professor Watson</h4>
+                        <p>Mphil - Mathematics</p>
+                        <p>University of Sydney, AS</p>
+                    </div>
+                    <div class="course-options">
+                        <a href="#">Open course</a>
+                        <img src="./stickies.svg" alt="">
+                        <img src="./people.svg" alt="">
+                        <img src="./hourglass.svg" alt="">
+                        <img src="./bell.svg" alt="">
+                    </div>
+                </div>
+                <div class="course" id="cs001">
+                    <div class="course-title">
+                        <h3>CS001</h3>
+                        <p>Elementary Computer Science</p>
+                    </div>
+                    <div class="course-info">
+                        <div class="prof-pic"></div>
+                        <h4>Professor Emeritus</h4>
+                        <p>Phd - Computer Science</p>
+                        <p>University of Birmingham, UK</p>
+                    </div>
+                    <div class="course-options">
+                        <a href="#">Open course</a>
+                        <img src="./stickies.svg" alt="">
+                        <img src="./people.svg" alt="">
+                        <img src="./hourglass.svg" alt="">
+                        <img src="./bell.svg" alt="">
+                    </div>
+                </div>
+                <div class="course" id="wbd601">
+                    <div class="course-title">
+                        <h3>WBD 601</h3>
+                        <p>Advance Web Development</p>
+                    </div>
+                    <div class="course-info">
+                        <div class="prof-pic"></div>
+                        <h4>Professor Odin</h4>
+                        <p>MA - Web development</p>
+                        <p>Founder of Odin Project</p>
+                    </div>
+                    <div class="course-options">
+                        <a href="#">Open course</a>
+                        <img src="./stickies.svg" alt="">
+                        <img src="./people.svg" alt="">
+                        <img src="./hourglass.svg" alt="">
+                        <img src="./bell.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERE STARTS THE SIDEBAR  -->
+
         <div class="side-wrapper">
             <div class="acc-wrapper">
                 <h2 class="lms-id">ZS220202315</h2>
@@ -93,7 +190,7 @@
                 <div class="profile-pic"></div>
             </div>
             <div class="assignment-wrapper side-sub-wrapper">
-                <h2>Assignment / Quiz's / GDB</h2>
+                <h2 style="font-size: 1rem;">Assignment / Quiz's</h2>
                 <ul>
                     <li>New assignment of CS001</li>
                     <li>Quiz result of MTH001</li>
