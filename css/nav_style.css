@@ -143,15 +143,65 @@ nav {
     background-color: #dbdbdb;
 }
 
+.mail-icon {
+    position: relative;
+}
+
 .mail-icon::before {
     content: "4";
     background-color: rgb(234,179,8);
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 50%;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     position: absolute;
-    right: 1rem;
+    right: 2px;
+    top: 0px;
     color: var(--white);
     font-family: var(--poppins);
     font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-wrapper {
+        grid-template-rows: 1fr;
+    }
+    .nav-wrapper > *:not(nav) {
+        display: none;
+    }
+    nav span {
+        display: none;
+    }
+    .sub_nav {
+        left: 2rem;
+        z-index: 9999;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-wrapper {
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .nav-wrapper {
+        width: calc(100vw - 2rem);
+        position: fixed;
+        display: grid;
+        transform: translateX(-100vw);
+        min-height: calc(100vh - 4rem);
+        grid-template-rows: auto 1fr auto;
+        z-index: 10000;
+        transition: var(--transition);
+    }
+    .nav-wrapper > *:not(nav) {
+        display: inline-block;
+    }
+    nav span {
+        display: inline-block;
+    }
+}
+
+.showNav {
+    transform: translateX(0);
 }
