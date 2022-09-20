@@ -143,3 +143,15 @@ nav {
     background-color: #dbdbdb;
 }
 
+.mail-icon::before {
+    content: "4";
+    background-color: rgb(234,179,8);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1rem;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-weight: 500;
+}

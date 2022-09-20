@@ -102,7 +102,6 @@
     grid-column: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -168,7 +167,7 @@
     align-items: stretch;
 }
 
-.course-options a {
+.course-options > .open-course {
     background-color: #9400DA;
     color: var(--white);
     padding: 0.5rem 1rem;
@@ -177,14 +176,54 @@
     border-radius: 4px;
 }
 
-.course-options img {
-    border: 1px solid #9400DA;
+.course-options .course-icon img {
+    border: 1px solid #000000;
     padding: 0.3rem;
     margin: 0 0.2rem;
     border-radius: 4px;
     cursor: pointer;
+    height: 100%;
 }
 
-.course-options img:hover {
+.course-options .course-icon img:hover {
     border-width: 2px;
+}
+
+.course-icon {
+    position: relative;
+}
+
+.gdb-icon::before, .assignment-icon::before, .quiz-icon::before, .notification-icon::before {
+    content: "2";
+    background-color: rgb(234,179,8);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-weight: 500;
+    z-index: 1000;
+    display: none;
+}
+
+#eng001 .gdb-icon::before {
+    display: inline;
+}
+
+#mth001 .assignment-icon::before {
+    display: inline;
+    content: "1";
+}
+
+#cs001 .notification-icon::before {
+    display: inline;
+    content: "3";
+}
+
+#wbd601 .quiz-icon::before {
+    display: inline;
+    content: "5";
 }
